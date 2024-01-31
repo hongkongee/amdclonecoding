@@ -1,0 +1,66 @@
+<-------------Fontawesome---------------->
+
+<script src="https://kit.fontawesome.com/89a0fea006.js" crossorigin="anonymous"></script>
+
+p1-------------------------------------------------------------------
+<왼쪽 상단>
+*menu bars
+<i class="fa-solid fa-bars"></i>
+
+*house
+<i class="fa-solid fa-house"></i>
+
+<오른쪽 상단>
+*user
+<i class="fa-solid fa-user"></i>
+
+*globe
+<i class="fa-solid fa-globe"></i>
+
+*magnigying-glass 돋보기
+<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+
+*cart-shopping 장바구니
+<i class="fa-solid fa-cart-shopping"></i>
+
+
+<하단>
+*chevron-down 아래방향 화살표
+<i class="fa-solid fa-chevron-down"></i>
+
+
+p2---------------------------------------------------------------------------
+*circle-play 영상재생
+<i class="fa-sharp fa-regular fa-circle-play"></i>
+
+
+p6---------------------------------------------------------------------------
+*arrow-up-right-from-square 본체 지금 쇼핑하기 키
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+<footer>
+<footer>
+*chevron-down 아래방향 화살표
+<i class="fa-solid fa-chevron-down"></i>
+
+*facebook-f
+<i class="fa-brands fa-facebook-f"></i>
+
+*x-twitter
+<i class="fa-brands fa-x-twitter"></i>
+
+*instargram
+<i class="fa-brands fa-instagram"></i>
+
+*linkedin
+<i class="fa-brands fa-linkedin"></i>
+
+*envelope 편지봉투
+<i class="fa-solid fa-envelope"></i>
+
+*youtube
+<i class="fa-brands fa-youtube"></i>
+
+*twitch
+<i class="fa-brands fa-twitch"></i>
