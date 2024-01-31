@@ -1,0 +1,39 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  background: black;
+}
+
+/* container style */
+
+.container .sub-container {
+  background: url(../imgback/p1-amd\ advantage\ copy.jpg) no-repeat center/cover;
+  color: #fff;
+  width: 100%;
+  height: 650px;
+}
+
+.container .sub-container ol {  
+  display: flex;
+  justify-content: start;
+}
+
+.container .sub-container .row {   
+  display: flex;
+  justify-content: start;
+}
