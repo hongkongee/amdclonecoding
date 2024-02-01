@@ -1,71 +1,175 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-<!--custom css-->
-<link rel="stylesheet" href="./head.css">
+  <!--custom css-->
+  <link rel="stylesheet" href="./head.css">
 
-<!-- font awesome download code -->
-<script src="https://kit.fontawesome.com/89a0fea006.js" crossorigin="anonymous"></script>
-<!-- 파비콘 넣기 -->
-<link rel="shortcut icon" href="../img2/favicon.ico" type="image/x-icon">
+  <!-- font awesome download code -->
+  <script src="https://kit.fontawesome.com/89a0fea006.js" crossorigin="anonymous"></script>
+  <!-- 파비콘 넣기 -->
+  <link rel="shortcut icon" href="../img2/favicon.ico" type="image/x-icon">
 
 </head>
 
 
 <body>
-  
-<div class="wrap"></div>
 
-<!-- header -->
+  <div class="wrap">
 
-  <header>
-    <div class="inner-header">
-      <h1 class="logo">
-        <a href="#">
-          <img src="../img2/logo.png" alt="로고이미지">
-        </a>
-      </h1>
-      
-      <a href="#" class="menu-open">
-        <span class="menu-txt"></span>
-        <span class="lnr lnr-menu"></span>
-      </a>
+    <!-- header -->
 
-      <div class="more">
-        
-        <a href="#"><i class="fa-solid fa-user"></i></a>
-        <a href="#"><i class="fa-solid fa-globe"></i></a>
-        <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    <header>
+      <div class="inner-header">
+
+        <!-- 태블릿, 모바일 햄버거 메뉴 버튼 -->
+        <nav class="gnb-mobile">
+          <a href="#">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </nav>
+        <h1 class="logo">
+          <a href="#">
+            <img src="../img2/logo.png" alt="로고이미지">
+          </a>
+        </h1>
+
+        <nav class="gnb">
+          <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources & Support</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </nav>
 
        
+        
+        <!-- -------------------- -->
+        <div class="more">
+
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-globe"></i></a>
+          <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+
+        </div>
+
+
       </div>
-      
-
-      <a href="#" class="menu-open">
-        <span class="menu-txt"><i class="fa-solid fa-bars"></i></span>
-        <span class="lnr lnr-menu"></span>
-      </a>
 
 
+    </header>
+    <!-- end header -->
 
 
-      <!-- <nav class="gnb">
-        <a href="#" class="close">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-        <ul>
-          <li class="active"><a href="#">제품</a></li>
-          <li><a href="#">솔루션</a></li>
-          <li><a href="#">다운로드 및 지원</a></li>
-          <li><a href="#">구입처</a></li>
-          
-        </ul> -->
-      </nav>
+    </header>
+
+    <!-- footer------------------------------------------------ -->
+    <footer>
+      <div class="inner-footer">
+
+        <div class="subscribe">
+          <div class="gnb">
+            <ul>
+              <li><a href="#">Subscribe to the latest news from AMD
+                <i class="fa-solid fa-chevron-down"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="messenger">
+
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitch"></i></a>
+  
+  
+          </div>
+
+
+        </div>
+        
+
+        <div class="option">
+          <p class="company">Company
+            <li><a href="#">About AMD</a></li>
+            <li><a href="#">Management Team</a></li>
+            <li><a href="#">Corporate Responsibilitym</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+          </p>
+
+          <p class="news">News & Events
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Media Library</a></li>
+
+          </p>
+
+          <p class="community">Community
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Developer</a></li>
+            <li><a href="#">Red Team</a></li>
+
+          </p>
+
+          <p class="partners">Partners
+            <li><a href="#">Developer Central</a></li>
+            <li><a href="#">AMD Partner Hub</a></li>
+            <li><a href="#">Partner Resource Library</a></li>
+            <li><a href="#">Authorized Distributors</a></li>
+
+          </p>
+
+          <p class="investers">Investers
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Financial Information</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li><a href="#">Governance Documents</a></li>
+            <li><a href="#">SEC Filings</a></li>
+
+          </p>
+
+
+
+
+        </div>
+
+
+
+
+
+        <nav class="gnb-bottom">
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Trademarks</a></li>
+            <li><a href="#">Statement on Forced Labor</a></li>
+            <li><a href="#">Fair & Open Competiotion</a></li>
+            <li><a href="#">UK Tax Strategy</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">Cookies Settings</a></li>
+          </ul>
+
+
+          <li class="company">&#xa9 2024 Advanced Micro Devices, Inc</li>
+
+        </nav>
+
+      </div>
+
+    </footer>
 
 
 
@@ -75,23 +179,9 @@
 
 
 
-    </div>
-
-   
-  </header>
-  <!-- end header -->
 
 
-</header>
-
-
-
-
-
-
-
-
-
-
+  </div>
 </body>
+
 </html>

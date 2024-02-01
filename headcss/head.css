@@ -7,7 +7,7 @@ body {
   color: #fff;
 }
 
-/* header style */
+/* header style -----------------------------------------------------------------*/
 header {
   background: orange;
   padding: 20px 0;
@@ -23,7 +23,7 @@ header .inner-header {
   margin: 0 auto;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -31,10 +31,12 @@ header .inner-header .logo {
   margin: 0 auto;
   border: 2px solid aqua;
   flex: 1;
+  
 }
 
 header .inner-header .logo img {
   height: 40px;
+  margin-top: 10px;
 }
 
 header .inner-header .more {
@@ -50,12 +52,191 @@ header .inner-header .more {
 
 header .inner-header .more a {
   font-size: 17px;
-  margin-left: 50px;
+  margin-left: 10px;
+  border: 1px solid yellow;
+  padding: 10px 15px;
 }
+
+header .inner-header .more a:hover {
+  background: gray;
+  border-radius: 10px;
+}
+
 /* ----------------------------------------------------------------------------------- */
+/* inner header 제품생산 */
+header .inner-header nav.gnb {
+  background: violet;
+  /* margin-left: 80px; */
+  width: 80%;
+  margin: 10px auto;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+header .inner-header nav.gnb ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+header .inner-header nav.gnb ul li {
+  display: flex;
+  margin-right: 40px;
+  
+}
+
+header .inner-header nav.gnb li a {
+  display: block;
+  border: 2px solid yellow;
+  justify-content: space-between;
+}
+
+
+
+/* 모바일 전용 햄버거 버튼은 default가 display: none으로 */
+header .inner-header .gnb-mobile {
+  display: none;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+
+
+/* ========== 반응형 웹 디자인 ========== */
+/* 노트북 해상도 1600px 미만 */
+@media (max-width: 1599px) {
+  header .inner-header .gnb-mobile {
+    float: left;
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    
+  }
+
+  header .inner-header nav.gnb {
+    display: none;
+}
+
+} 
+
+
+
+/* footer style----------------------------------------------- */
+
+footer {
+  background: black;
+  width: 100%;
+}
+
+footer .inner-footer {
+  background: navajowhite;
+  width: 90%;
+  margin: 20px auto;
+  padding: 50px;
+}
+
+footer .inner-footer .subscribe {
+  width: 90% auto;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  /* flex-wrap: wrap; */
+  background: blue;
+  align-items: flex-start;
+  
+  
+}
+
+footer .inner-footer .subscribe .messenger {
+  /* width: 40%; */
+  background: chartreuse;
+  font-size: 10px;
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  /* padding: 0 10px; */
+  justify-content: flex-end;
+  
+}
+
+footer .inner-footer .subscribe .messenger a {
+ font-size: 20px;
+ padding: 0 8px;
+ margin-left: 30px;
+ /* align-items: stretch; */
+ /* flex-grow: 1; */
+ box-sizing: border-box;
+ 
+}
+
+footer .inner-footer .subscribe .gnb ul li a {
+  margin-right: 10px;
+}
+
+footer .inner-footer .subscribe .gnb ul li a i {
+  margin-left: 70px;
+}
+
+
+footer .inner-footer .subscribe .gnb {
+  background: red;
+  border-bottom: 1px solid #fff;
+}
+footer .inner-footer .subscribe ul { 
+  display: block;
+  justify-content: flex-start;
+  padding: 0;
+  background: yellow;
+  padding-left: 10px;
+}
+
+
+
+footer .messenger {
+  /* background: pink; */
+  width: 60px;
+  font-size: 17px;
+ margin-top: 0;
+
+  
+  border: 1px solid yellow;
+  padding: 12px 15px;
+}
+
+footer .messenger a{
+  border: 1px solid yellow;
+  justify-content: end;
+}
+
+footer .messenger a:hover {
+  background: gray;
+  border-radius: 10px;
+}
+/* footer 상단 end */
+/* 여기까지 완료 ---------------------------------------------------- */
+footer .option {
+  width: 90%;
+  margin-top: 100px;
+  
+}
+
+
+/* 태블릿 1024px 이하 해상도 (아이패드 프로) */
+/* @media (max-width: 1024px) {
+
+} */
+
+
+
 /* gnb -> 숨겨진 메뉴 (햄버거 버튼 클릭시 등장) */
 
-header .inner-header .menu-open {
+/* header .inner-header .menu-open {
   border: 2px solid greenyellow;
   flex: 1;
   font-size: 25px;
@@ -64,7 +245,12 @@ header .inner-header .menu-open {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
 }
+
+header .inner-header .menu-open .menu-txt {
+  
+} */
 
 
 
