@@ -97,14 +97,13 @@ font-size: 14px;
 
 /* nav.bar style */
 
-.container .nav-bar {
-  background: #9993;
-  border-top: 0.5px solid #9997;
-  border-bottom: 0.5px solid #9997;
+.container .nav-wrap .nav-bar {
+  background: linear-gradient(90deg, rgb(10, 10, 10) 20%, rgb(27, 27, 27) 50%, rgb(10, 10, 10) 80%);
+  border-bottom: 1px solid rgb(49, 49, 49);
   width: 100%;
   height: 58px;
-  display: block;
   position: sticky;
+  top: 0;
 }
 
 .container .nav-bar .box{
@@ -113,11 +112,22 @@ font-size: 14px;
   margin: 0 auto;
 }
 
-.container .nav-bar ul{
+.container .nav-bar .box .ul-wrap {
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.container .nav-bar .ul-wrap ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.container .nav-bar .ul-wrap ul:hover {
+  border-bottom: 2px solid #fff;
 }
 
 /* summary style */
@@ -224,12 +234,12 @@ line-height: 1.5;
   text-decoration: underline;
 }
 
-.function .divider {
+.function .inner-space .divider {
   width: 100%;
   height: 50px;
 }
 
-.function .ex-wrap {
+.function .inner-space .ex-wrap {
   width: 100%;
   height: 150px;
   display: flex;
@@ -237,6 +247,33 @@ line-height: 1.5;
   align-items: center;
 }
 
-.function .ex-wrap .ex {
-  width: 70%;
+.function .inner-space .ex-wrap .ex {
+  text-align: justify;
+  width: 63%;
+}
+
+.function .inner-space .ex-wrap .ex h3 {
+  font-size: 1.55em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.function .inner-space .ex-wrap .ex h3 sup {  
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+.function .inner-space .ex-wrap .ex p {
+  line-height: 1.5;
+}
+
+.function .inner-space .test-result {
+  margin: 0 auto;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.function .inner-space .test-result div {
+  width: 25%;
 }
