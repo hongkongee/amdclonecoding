@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background: #000;
+  background: #000;  
 }
 
 .container {
@@ -98,12 +98,13 @@ font-size: 14px;
 /* nav.bar style */
 
 .container .nav-bar {
-  background: #292929;
-  border-bottom: 0.5px solid #535353;
+  background: #9993;
+  border-top: 0.5px solid #9997;
+  border-bottom: 0.5px solid #9997;
   width: 100%;
   height: 58px;
+  display: block;
   position: sticky;
-  top: 0;
 }
 
 .container .nav-bar .box{
@@ -112,19 +113,12 @@ font-size: 14px;
   margin: 0 auto;
 }
 
-.container .nav-bar .box ul{
-  height: 100%;
+.container .nav-bar ul{
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.container .nav-bar .box ul ul:hover {
-  border-bottom: 2px solid #fff;
-} 
-
-
 
 /* summary style */
 
@@ -140,8 +134,8 @@ font-size: 14px;
 
 .summary .contents {
   display: flex;
-  width: 42.5%;
-  padding: 0 2.4%;
+  width: 44%;
+  padding: 0 1%;
   margin-top: 40px;
   text-align: left;
   flex-flow: column wrap;
@@ -149,27 +143,21 @@ font-size: 14px;
 }
 
 .summary .contents h2 {
-  font-size: 1.8em;
-  font-weight: bold;
+  font-size: 1.6em;
   margin-bottom: 16px;
 }
 
 .summary .contents p {
-  margin-bottom: 26px;
   line-height: 1.5;
+  margin-bottom: 26px;
 }
 
-.summary .contents .p2 {
-  margin-bottom: 10px;
-} 
-
-.summary .contents li {
-  text-indent: 10px;
-  margin-top: 7px;
+.summary .contents p .font {
+line-height: 1.5;
 }
 
 .summary .img-area {
-  width: 55.5%;
+  width: 52%;
   background: url(../imgback/p2-choi-juck.png) no-repeat center/cover;
   padding: 0 1%;
   margin-top: 40px;
