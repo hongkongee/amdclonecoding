@@ -177,11 +177,14 @@ line-height: 1.5;
 .function {
   margin: 0 auto;
   width: 100%;
-  padding: 56px 200px;
   height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .function .inner-space {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -271,9 +274,54 @@ line-height: 1.5;
   margin: 0 auto;
   width: 97%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .function .inner-space .test-result div {
-  width: 25%;
+  width: 23%;
+}
+
+.function .inner-space .test-result img {
+  width: 100%;
+}
+
+.spec {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.spec .spec-container  {
+  margin: 0 auto;
+  padding: 90px;
+  width: 100%;
+}
+
+.spec .spec-container .spec-wrap {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spec .spec-container .spec-wrap .img-wrap {
+  margin: 20px 20px 0;
+
+}
+
+.spec .spec-container .spec-wrap .spec-table {
+  margin: 20px 20px 50px;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.spec .spec-container .spec-wrap .spec-table h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.spec .spec-container .spec-wrap .spec-table ul {
+  display: flex;
+  padding: 5px 5px 10px;
 }
