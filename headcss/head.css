@@ -102,6 +102,13 @@ header .inner-header nav.gnb li a {
   
   
 }
+header .inner-header nav.gnb li a:hover {
+  border-bottom: 2px solid white;
+  
+}
+
+
+
 
 /* 햄버거버튼 */
 
@@ -267,7 +274,7 @@ footer .inner-footer .option a:hover {
 }
 
 
-/* footer > .inner-footer > nav.gnb-bottom---------------------------------------- */
+/* footer > .inner-footer > nav.gnb-bottom----------------------------------------- */
 
 footer .inner-footer nav.gnb-bottom {
   color: gray;
@@ -436,12 +443,72 @@ footer .inner-footer .option nav {
   footer .inner-footer .subscribe {
     font-size: 17px;
     font-weight: 500;
+    display: block;
   }
 
 }
 
 
+/* 태블릿 768px 이하 해상도 (아이패드 미니) */
+@media (max-width: 768px) {
+  footer .inner-footer {
+    width: 100%;
+  }
+  footer .inner-footer .subscribe .gnb {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+  }
 
+  footer .inner-footer .subscribe .messenger {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    
+  }
+
+  footer .inner-footer .subscribe .messenger a {
+    margin-right: -80px;
+    margin-left: 90px;
+  }
+
+  footer .inner-footer .option {
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    margin-left: -20px;
+
+  }
+
+  footer .inner-footer .option nav {
+    margin-bottom: 40px;
+  }
+
+/* 밑에 해결 불가능..------------------------------------ */
+  footer .inner-footer nav.gnb-bottom {
+    
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    border: 1px solid red;
+    
+    
+  }
+
+  footer .inner-footer nav.gnb-bottom li {
+    justify-content: center;
+    display: block;
+    
+  }
+  
+  
+
+
+
+
+}
 
 
 
