@@ -56,6 +56,7 @@ body {
 }
 
 .sub-container .breadcrumb .wrap ol a {
+  font-size: 0.9em;
   padding: 5px;
 }
 
@@ -163,14 +164,27 @@ font-size: 14px;
 }
 
 .summary .contents p .font {
-line-height: 1.5;
-}
+  line-height: 1.5;
+  }
 
 .summary .img-area {
   width: 52%;
   background: url(../imgback/p2-choi-juck.png) no-repeat center/cover;
   padding: 0 1%;
   margin-top: 40px;
+
+  font-size: 20px;
+  position: relative;
+}
+
+.summary .img-area .pause {  
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
 }
 
 /* function styl */
@@ -285,6 +299,8 @@ line-height: 1.5;
   width: 100%;
 }
 
+/* spec style */
+
 .spec {
   margin: 0 auto;
   width: 100%;
@@ -297,7 +313,6 @@ line-height: 1.5;
 }
 
 .spec .spec-container .spec-wrap {
-  margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -305,13 +320,19 @@ line-height: 1.5;
 }
 
 .spec .spec-container .spec-wrap .img-wrap {
-  margin: 20px 20px 0;
+  width: 20%;
+  display: flex;
+  justify-content: right;
+}
 
+.spec .spec-container .spec-wrap .img-wrap img {
+  width: 100%;
+  padding: 0 20px;
 }
 
 .spec .spec-container .spec-wrap .spec-table {
-  margin: 20px 20px 50px;
   width: 60%;
+  margin: 0 10px 10px;
   box-sizing: border-box;
 }
 
@@ -321,7 +342,158 @@ line-height: 1.5;
   margin-bottom: 20px;
 }
 
-.spec .spec-container .spec-wrap .spec-table ul {
+.spec .spec-container .spec-wrap .spec-table table {
+  width: 100%;
+  border: 0.1px solid #000;
+  border-collapse: collapse;
+}
+
+.spec .spec-container .spec-wrap .spec-table .light {
+  border: 0.1px solid #000;
+  background: rgb(41, 44, 51);  
   display: flex;
-  padding: 5px 5px 10px;
+  align-items: center;
+}
+
+.spec .spec-container .spec-wrap .spec-table .basic {
+  border-right: 0.1px solid #000;
+  border-left: 0.1px solid #000;
+  background: rgb(26, 27, 32);
+  display: flex;
+  align-items: center;
+}
+
+.spec .spec-container .spec-wrap .spec-table tr {
+  width: 90%;
+}
+
+.spec .spec-container .spec-wrap .spec-table tr td {
+  padding: 8px 4px;
+} 
+
+.spec .spec-container .spec-wrap .spec-table tr .short {
+  width: 10%;
+  border-right: 0.1px solid #000;
+}
+
+.spec .spec-container .spec-wrap .spec-table tr td sup {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+/* shoping style */
+
+.shoping {
+  padding: 90px;
+}
+
+.shoping .shoping-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.shoping .products {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+
+.shoping .products section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 18%;
+  border-radius: 5px;
+  background: #1a1a1a;
+  margin-bottom: 50px;
+  margin-right: 2%;
+}
+
+.shoping .products section h2 {
+  display: flex;
+  padding: 15px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.shoping .products section h2:hover {
+  text-decoration: underline;
+}
+
+.shoping .products section p {
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.shoping .products section a {
+  padding-bottom: 30px;
+  padding-left: 15px;
+  font-size: 0.9em;
+  color: rgb(0, 132, 255);
+}
+
+.shoping .products section a:hover {
+  text-decoration: underline;
+}
+
+.shoping .products section div {
+  width: 100%;
+}
+
+.shoping .products section div img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* footnote style */
+.footnote {
+  width: 100%;
+}
+
+.footnote span {  
+  padding: 20px 11%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+}
+
+.footnote span h3:hover {
+  text-decoration: underline;
+}
+
+.footnote i {
+  position: relative;
+  left: 20px;
+}
+
+.read-container {
+  width: 100%;
+  padding: 30px 0 60px;
+  background: #252529;  
+  display: flex;
+  justify-content: center;
+}
+
+.read-container .read {  
+  width: 74%;
+}
+
+.read-container .read ul {
+  text-align: start;
+  line-height: 1.5;
+}
+
+.read-container .read ul li a {
+  color: rgb(0, 132, 255);
+}
+
+.read-container .read ul li a:hover {
+  text-decoration: underline;
 }
