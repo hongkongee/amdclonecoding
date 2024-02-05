@@ -1,0 +1,745 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+@import url('./common.css');
+
+body {
+  background: #000;
+}
+
+section>h2 {
+  font: bold 30px / 1.2em sans-serif ;
+  margin: 30px 0;
+}
+
+/* =============== section.main =============== */
+
+section.main {
+  background: #000 url("../img main/main1-three-people.jpg") no-repeat top / 100vw scroll;
+  
+  height: 700px;
+ 
+  position: relative;
+
+}
+
+/* section.main .background {
+
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+
+}
+
+section.main .background img {
+
+  width: 100%;
+} */
+
+section.main .others {
+  /* 배너 모음 */
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+
+  font-size: 18px;
+  color: #fff;
+
+}
+
+
+
+section.main .others .txt h2 {
+  font: bold 40px / 1.4em sans-serif;
+  margin: 20px 0;
+}
+
+section.main .others .txt p {
+  font-size: 20px;
+  line-height: 130%;
+}
+
+section.main .others .logo {
+  /* 로고 이미지 */
+
+  margin: 20px 0 10px;
+  display: flex;
+  align-items: center;
+
+
+  /* 영역 확인하기 */
+  /* border: 1px solid yellow; */
+
+}
+
+section.main .others .logo li {
+  margin-right: 10px;
+}
+section.main .others .logo li img { /* AMD 이미지 */
+  width: 140px;
+}
+
+section.main .others h3 {
+  margin-bottom: 20px;
+  font: bold 25px / 1.4em sans-serif;
+}
+
+section.main .others .more { /* 자세히 알아보기 */
+  width: 180px;
+  height: 60px;
+  border: 0.5px outset #4e4d4d;
+  background:linear-gradient(to right,#363535, #8a8787);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+section.main .others .more:hover {
+  opacity: 0.8;
+}
+
+section.main .others .more a {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+section.main ul.models { /* AI 개발자 콘테스트 */
+  margin: 0 auto;
+  padding-top: 660px;
+
+  width: 90%;
+    /* 영역 확인하기
+  border: 1px solid yellow; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #fff;
+
+
+}
+
+section.main ul.models li {
+  border-top: 2px solid #fff;
+  width: 23.75%;
+  margin-left: 1%;
+
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+section.main ul.models li:first-child {
+  opacity: 1;
+}
+
+section.main ul.models li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+section.main ul.models li:last-child {
+  margin-right: 1%;
+}
+
+
+section.main ul.models li span {
+  line-height: 3em;
+}
+
+
+
+section.main button.play { /* 재생 버튼 */
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #000;
+
+  
+
+  position: absolute;
+  left: 95%;
+  top: 70%;
+  transform: translate(-95%, -70%);
+}
+
+section.main button.play:hover {
+  cursor: pointer;
+}
+
+section.main button.play i {
+  color: #fff;
+
+}
+
+
+/* =============== section.products =============== */
+section.products {
+  margin: 100px auto;
+  color: #fff;
+  width: 90%;
+}
+
+section.products h2 {
+  margin-left: 40px;
+}
+
+
+
+section.products ul.lists { /* 주요 제품 이미지, (창 width가 줄어들수록 이미지도 줄어듦 구현 필요)*/
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section.products ul.lists li {
+  width: 32%;
+  /* border: 4px solid orange; */
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+
+  position: relative;
+
+}
+
+section.products ul.lists li img {
+  height: 250px;
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}
+
+section.products ul.lists li .text {
+  position: absolute;
+  width: 95%;
+
+  /* border: 4px solid skyblue; */
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -85%);
+
+  
+}
+
+section.products ul.lists li .text h3 {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+section.products ul.lists li .text p {
+  font: 16px / 1.4em sans-serif;
+  color: rgb(103, 60, 221);
+}
+
+section.products ul.lists li:nth-child(2) .text p {
+  color: #fff;
+  margin: 20px 0;
+}
+
+section.products ul.lists li:nth-child(2n+1) .text p:hover {
+  text-decoration: underline;
+  /* cursor: grab; */
+  cursor: pointer;
+
+}
+
+section.products ul.lists li .text .search {
+  margin-top: 30px;
+  height: 60px;
+  width: 180px;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+section.products ul.lists li .text .search:hover {
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* =============== section.recommendation =============== */
+section.recommendation {
+  color: #fff;
+  background: #0000009d;
+}
+
+section.recommendation h2 {
+  margin-left: 7.5%;
+  font: bold 30px / 1.2em sans-serif ;
+}
+
+
+section.recommendation ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid yellow; */
+  
+}
+
+section.recommendation ul li:nth-child(2n+1) { /* 화살표 버튼 */
+  width: 3%;
+  margin: auto;
+}
+
+
+section.recommendation ul li .arrow {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 30px;
+  height: 80px;
+  background: #313030;
+  /* border: 1px solid yellow; */
+  border-radius: 10%;
+}
+
+section.recommendation ul li .arrow:hover {
+  cursor: pointer;
+  background: #747272;
+}
+
+section.recommendation ul li .arrow span {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100px;
+}
+
+section.recommendation ul li:first-child span {
+  transform: rotate(180deg);
+}
+
+section.recommendation ul li:nth-child(2) {
+  width: 85%;
+  /* border: 1px solid yellow; */
+}
+
+
+section.recommendation li .backimg {
+  background-image: url("../img main/main3-solution-ingongjineung.jpg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+
+  
+
+  margin: 20px auto;
+  padding: 10px 0;
+  height: 420px;
+  /* border: 1px solid yellow; */
+
+  position: relative;
+
+}
+
+section.recommendation li .backimg .sentence {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-10%, 30%);
+
+  /* border: 1px solid yellow; */
+
+  font: 16px / 2em sans-serif;
+
+}
+
+
+section.recommendation li .backimg .sentence h3 {
+  font: 27px / 2em sans-serif;
+}
+
+section.recommendation li .backimg .sentence a:hover {
+  text-decoration: underline;
+}
+
+
+section.recommendation ul.solutions { /* 인공지능 */
+  margin: 0 auto;
+
+
+  width: 85%;
+
+/*  border: 1px solid yellow; */
+
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+
+  color: #fff;
+
+
+}
+
+section.recommendation ul.solutions li {
+  border-top: 2px solid #fff;
+  width: 15.5%;
+  margin-left: 1%;
+  line-height: 1.2em;
+
+  transition: 0.5s;
+  opacity: 0.5;
+
+  /* border: 1px dashed yellow; */
+}
+
+section.recommendation ul.solutions li:first-child {
+  opacity: 1;
+}
+
+section.recommendation ul.solutions li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+section.recommendation ul.solutions li:last-child {
+  margin-right: 1%;
+}
+
+
+section.recommendation ul.solutions li span {
+  line-height: 3em;
+}
+
+/* =============== section.cooperation =============== */
+section.cooperation {
+  margin: 250px 0 50px;
+  width: 100%;
+  height: 700px;
+  padding: 220px 0;
+  background: url('../img main/main4-hhub-ruk.jpg') no-repeat center/cover fixed;
+}
+
+section.cooperation .inner {
+  width: 43%;
+  /* border: 4px solid #fff; */
+  margin: 0 auto;
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.4;
+  color: #fff;
+}
+
+section.cooperation .inner h2 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+
+
+section.cooperation .inner h2 span {  /* 깜빡이기 */ 
+  animation: blinker 1s ease infinite alternate;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+section.cooperation .inner .more {
+  /* border: 1px solid #fff; */
+  width: 180px;
+  height: 55px;
+  margin: 40px auto;
+
+  background: linear-gradient(to right, rgba(59, 59, 59, 0.5), rgba(197, 193, 193, 0.5));
+  border: 0.5px outset #fff #000;
+  font-size: 16px;
+
+}
+
+section.cooperation .inner .more:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+section.cooperation .inner .more a {
+  text-align: center;
+  line-height: 55px;
+  font-weight: 700;
+  opacity: 100%;
+}
+
+/* =============== section.research =============== */
+section.research {
+  width: 80%;
+  margin: 50px auto;
+  /* border: 1px solid yellow; */
+  color: #fff;
+}
+
+
+section.research ul.example {
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+section.research ul.example li {
+  overflow: hidden;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+section.research ul.example li img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+section.research ul.example li:first-child {
+  width: 38%;
+  margin-right: 2%;
+
+  /* border: 1px dashed yellowgreen; */
+
+
+}
+
+
+section.research ul.example li:nth-child(2) {
+  width: 58%;
+  margin-left: 2%;
+  /* border: 1px dashed yellowgreen; */
+  
+}
+
+section.research ul.example li:nth-child(3) {
+  width: 58%;
+  margin-right: 2%;
+  /* border: 1px dashed yellowgreen; */
+}
+
+section.research ul.example li:last-child {
+  width: 38%;
+  margin-left: 2%;
+  /* border: 1px dashed yellowgreen; */
+}
+
+section.research ul.example li .text {
+  width: 300px;
+  /* border: 1px dotted aqua; */
+  top: 130%;
+  left: 10%;
+  transform: translate(10%, -130%);
+}
+
+section.research ul.example li .text h3 {
+  font: bold 24px / 1.4em sans-serif;
+  margin-bottom: 15px;
+}
+
+section.research ul.example li .text .more {
+  width: 180px; 
+  height: 55px;
+  margin-top: 30px;
+  border: 1.5px solid #fff;
+  font-weight: 700;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.research ul.example li .text .more:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+
+section.research ul.example li .text .more a {
+  line-height: 55px;
+}
+
+section.research ul.example li .text .more span {
+  margin-left: 10px;
+}
+
+/* =============== section.news =============== */
+section.news {
+  width: 80%;
+  /* height: 700px; */
+  color: #fff;
+  margin: 150px auto;
+
+  /* border: 2px dashed #fff; */
+}
+
+section.news ul.amdnews {
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+
+}
+
+section.news ul.amdnews li {
+  width: 23.5%;
+}
+
+section.news ul.amdnews li:first-child,
+section.news ul.amdnews li:nth-child(2),
+section.news ul.amdnews li:nth-child(3) {
+  margin-right: 2%;
+}
+
+section.news ul.amdnews li .imgbox {
+  overflow: hidden;
+  height: 200px;
+}
+
+section.news ul.amdnews li .imgbox img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+
+  transition: 0.6s;
+}
+
+
+section.news ul.amdnews li {
+  background-color: #272727c4;
+  border: 1px solid #272727c4;
+  width: 100%;
+  height: 400px;
+  border-radius: 3%;
+  overflow: hidden;
+}
+
+section.news ul.amdnews li .text {
+  padding: 20px;
+}
+
+section.news ul.amdnews li .text p {
+  font: bold 16px / 1.4em sans-serif;
+  margin-bottom: 35px;
+}
+
+section.news ul.amdnews li .text span {
+  color: #8a8888;
+  font-size: 14px;
+}
+
+section.news ul.amdnews li:hover p {
+  text-decoration: underline;
+}
+
+section.news ul.amdnews li:hover {
+  cursor: pointer;
+}
+
+section.news ul.amdnews li:hover .imgbox img {
+  transform: scale(1.2);
+  height: 250px;
+}
+
+
+/* ============================= =========== ============================= */
+/* ============================= Media Query ============================= */
+/* ============================= =========== ============================= */
+@media (max-width: 991px) {
+
+  section.recommendation ul.solutions li span{
+    display: none;
+  }
+
+  section.research {
+    width: 95%;
+    /* border: 2px dashed red; */
+  }
+
+  section.research ul.example {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+
+  }
+
+  section.research ul.example li {
+    overflow: hidden;
+    /* border: 2px dashed blue; */
+    width: 100%;
+    
+  }
+
+  section.research ul.example li:first-child,
+  section.research ul.example li:nth-child(2),
+  section.research ul.example li:nth-child(3),
+  section.research ul.example li:last-child {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section.research ul.example li img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  section.research ul.example li .text h3 {
+    font-size: 20px;
+  }
+
+
+
+  section.news {
+    width: 95%;
+
+  }
+  
+
+  section.news ul.amdnews {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+  
+  }
+
+  section.news ul.amdnews li {
+    width: 46%;
+    margin-bottom: 60px;
+  }
+
+  section.news ul.amdnews li .imgbox {
+    height: 260px;
+  }
+
+  section.news ul.amdnews li .imgbox img {
+    height: 260px;
+  }
+
+  section.news ul.amdnews li:nth-child(2n+1) {
+    margin-right: 2%;
+  }
+  section.news ul.amdnews li:nth-child(2n) {
+    margin-left: 2%;
+  }
+
+  section.news ul.amdnews li .text {
+    height: 300px;
+  }
+}
+
+
