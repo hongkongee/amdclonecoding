@@ -1,5 +1,6 @@
 /* reset css */
-@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+/* @import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,13 +16,124 @@ a {
 }
 
 body {
-  background: #000;  
+  background: #000;
+  width: 100%;
 }
 
 .container {
   width: 100%;
   font-family: Arial, sans-serif;
   color: #fff;
+}
+
+header {
+  /* background: orange; */
+  padding: 0 0 20px 0;
+  /* position: fixed; */
+  width: 100%;
+  top: 0;
+  /* z-index: 9999; */
+}
+
+header .inner-header {
+  background: black;
+  width: 95%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* header > inner-header > logo */
+
+header .inner-header .logo {
+  margin: 0 auto;
+  /* border: 2px solid aqua; */
+  flex: 1;
+  
+}
+
+header .inner-header .logo img {
+  height: 40px;
+  margin-top: 10px;
+  padding: 2px 0;
+}
+
+/* header > inner-header > more */
+
+header .inner-header .more {
+  flex: 1;
+  font-weight: 700;
+  font-size: 1.2em;
+  align-self: stretch;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .inner-header .more a {
+  font-size: 15px;
+  margin-left: 5px;
+  /* border: 1px solid yellow; */
+  padding: 10px 15px;
+  margin-right: 15px;
+}
+
+header .inner-header .more a:hover {
+  background: #272525;
+  border-radius: 10px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* inner header 제품생산 */
+header .inner-header nav.gnb {
+  /* background: violet; */
+  /* margin-left: 80px; */
+  width: 80%;
+  margin: 0 30px 0 3px;
+  /* padding-right: 10px; */
+  font-size: 17px;
+  font-weight: 350;
+}
+
+header .inner-header nav.gnb ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  
+}
+
+
+header .inner-header nav.gnb ul li {
+  display: flex;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+header .inner-header nav.gnb li a {
+  display: block;
+  /* border: 2px solid yellow; */
+  justify-content: space-between;
+  
+  
+}
+header .inner-header nav.gnb li a:hover {
+  border-bottom: 2px solid white;
+  
+}
+
+
+
+
+/* 햄버거버튼 */
+
+header .inner-header .gnb-mobile {
+  display: none;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-right: 20px;
 }
 
 /* sub-container style */
@@ -34,30 +146,31 @@ body {
 .sub-container .breadcrumb {
   display: flex;
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
   height: 100%;
-  padding: 0 90px 26px;
+  padding: 0 90px;
   flex-direction: column;
 }
 
 .sub-container .breadcrumb .wrap {
   display: flex;
-  font-size: 12px;
-  opacity: 0.6;
+  font-size: 0.7em;
+  opacity: 0.5;
   font-family: sans-serif;
-  padding: 16px 0;
   flex-grow: 0.1;
 }
 
 .sub-container .breadcrumb .wrap ol {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: start;
+  padding-left: 3%;
+  font-size: 1.05em;
 }
 
 .sub-container .breadcrumb .wrap ol a {
   font-size: 0.9em;
-  padding: 5px;
+  padding-right: 7px;
 }
 
 .sub-container .breadcrumb .wrap ol li span {
@@ -65,35 +178,35 @@ body {
 }
 
 .sub-container .center {
-  padding: 16px 0 0 90px;
-  flex-grow: 20;
-  display: flex;
-  align-items: center;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 40%;
 }
 
 .sub-container .center .row {
-  height: 33.33%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;  
-  width: 50%;
+  height: 100%;
+
 }
 
 .sub-container .center .row .row-wrap p:first-child {
 margin-bottom: 10px;
 padding-bottom: 16px;
-font-size: 14px;
 }
 
 .sub-container .center .row .row-wrap h1 {
-  font-size: 41.6px;
+  font-size: 2.4em;
   margin: 0 0 16px;
+  font-weight: normal;
+}
+
+.sub-container .center .row .row-wrap p {
+  font-size: 0.9em;
 }
 
 .sub-container .center .row .row-wrap .sub {
   margin-bottom: 26px;
   padding-bottom: 16px;
-  font-size: 20.32px;
+  font-size: 1.2em;
 }
 
 /* nav.bar style */
@@ -105,29 +218,36 @@ font-size: 14px;
   height: 58px;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 .container .nav-bar .box{
   height: 100%;
-  width: 300px;
+  width: 20%;
   margin: 0 auto;
 }
 
 .container .nav-bar .box .ul-wrap {
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
 }
 
-.container .nav-bar .ul-wrap ul {
+.container .nav-bar .ul-wrap div {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.container .nav-bar .ul-wrap ul:hover {
+.container .nav-bar .ul-wrap ul a {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.container .nav-bar .ul-wrap div:hover {
   border-bottom: 2px solid #fff;
 }
 
@@ -140,40 +260,43 @@ font-size: 14px;
   padding: 70px 90px;
   height: 670px;
   background: #000;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .summary .contents {
   display: flex;
-  width: 44%;
-  padding: 0 1%;
-  margin-top: 40px;
-  text-align: left;
+  width: 38%;
+  height: 100%;
   flex-flow: column wrap;
   justify-content: center;
+  line-height: 1.5;
+
 }
 
 .summary .contents h2 {
-  font-size: 1.6em;
-  margin-bottom: 16px;
+  font-size: 1.8em;
+  margin-bottom: 0;
 }
 
 .summary .contents p {
-  line-height: 1.5;
-  margin-bottom: 26px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
-.summary .contents p .font {
-  line-height: 1.5;
-  }
+.summary .contents ul {
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+
 
 .summary .img-area {
-  width: 52%;
+  width: 55%;
   background: url(../imgback/p2-choi-juck.png) no-repeat center/cover;
   padding: 0 1%;
   margin-top: 40px;
 
-  font-size: 20px;
+ 
   position: relative;
 }
 
@@ -472,7 +595,7 @@ font-size: 14px;
   position: relative;
   left: 20px;
 }
-
+/* 
 .read-container {
   width: 100%;
   padding: 30px 0 60px;
@@ -496,4 +619,388 @@ font-size: 14px;
 
 .read-container .read ul li a:hover {
   text-decoration: underline;
+} */
+
+/* footer style----------------------------------------------- */
+
+footer {
+  width: 100%;
+  
+}
+
+footer .inner-footer {
+  background: black;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  
+}
+
+/* footer > .inner-footer > .subscribe ----------------------------------------------------------------*/
+
+footer .inner-footer .subscribe {
+  width: 100%;
+  margin-top: 0px;
+  /* padding-top: 20px; */
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  
+  /* background: blue; */
+  align-items: flex-start;
+  
+}
+
+footer .inner-footer .subscribe .messenger {
+  /* width: 40%; */
+  /* background: chartreuse; */
+  font-size: 10px;
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  /* padding: 0 10px; */
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+footer .inner-footer .subscribe .messenger a {
+ font-size: 20px;
+ padding: 0 8px;
+ margin-left: 30px;
+ /* align-items: stretch; */
+ /* flex-grow: 1; */
+ box-sizing: border-box;
+ 
+}
+
+footer .inner-footer .subscribe .gnb ul li a {
+  margin-right: 10px;
+  
+}
+
+footer .inner-footer .subscribe .gnb ul li a i {
+  margin-left: 70px;
+  
+}
+
+
+footer .inner-footer .subscribe .gnb {
+  /* background: red; */
+  border-bottom: 1px solid #fff;
+  flex-wrap: wrap;
+  
+}
+footer .inner-footer .subscribe ul { 
+  /* display: block; */
+  justify-content: flex-start;
+  padding: 0;
+  /* background: yellow; */
+  /* padding-left: 10px; */
+  display: flex;
+  list-style: none;
+}
+
+/* footer > .messenger */
+
+footer .messenger {
+  /* background: pink; */
+  width: 60px;
+  font-size: 17px;
+ margin-top: 0;
+
+  
+  /* border: 1px solid yellow; */
+  padding: 14px 0px;
+}
+
+footer .messenger a{
+  /* border: 1px solid yellow; */
+  justify-content: end;
+  
+}
+
+footer .messenger a:hover {
+  background: #272525;
+  border-radius: 10px;
+}
+/* footer 상단 end */
+
+/* footer 하단 start--------------------------------------------- */
+
+/* footer > .option */
+footer .option {
+  width: 80% auto;
+  margin: 100px 40px 0 40px; 
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+  background: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+
+  
+}
+
+footer .inner-footer .option nav {
+  padding-right: 15px;
+  box-sizing: border-box;
+  
+}
+
+footer .inner-footer .option p {
+  width: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  /* border: 1px solid red; */
+  
+}
+
+footer .inner-footer .option li {
+  padding-bottom: 5px;
+  display: flex;
+}
+
+footer .inner-footer .option a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* footer > .inner-footer > nav.gnb-bottom----------------------------------------- */
+
+footer .inner-footer nav.gnb-bottom {
+  color: gray;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+footer .inner-footer nav.gnb-bottom ul {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+footer .inner-footer nav.gnb-bottom ul li {
+  padding-right: 2px;
+  display: flex;
+  /* justify-content: center; */
+  
+}
+
+
+footer .inner-footer nav.gnb-bottom ul a {
+  flex-direction: row;
+  
+}
+
+footer .inner-footer nav.gnb-bottom a:hover {
+  color: white;
+  text-decoration: underline;
+  
+}
+
+/* footer > .inner-footer > li.company---------------------------- */
+
+
+footer .inner-footer li.company {
+  font-size: 13px;  
+  
+  color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* ======================================================================== */
+
+/* ========== 반응형 웹 디자인 ========== */
+/* 노트북 해상도 1600px 미만 */
+@media (max-width: 1599px) {
+  header .inner-header .gnb-mobile {
+    float: left;
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    padding-top: 5px;
+  }
+
+  header .inner-header nav.gnb {
+    display: none;
+}
+
+header .inner-header .logo img {
+  height: 40px;
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+footer .inner-footer .subscribe .messenger {
+  /* padding-right: 10px; */
+  
+  margin-right: -140px;
+  margin-top: -10px;
+}
+
+footer .inner-footer .subscribe .messenger a {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: -5px;
+  padding-bottom: 5px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+
+
+
+
+footer .inner-footer .subscribe .gnb ul {
+  list-style: none;
+}
+
+footer .inner-footer .subscribe .gnb ul li a i {
+  margin-left: 25px;
+}
+
+footer .inner-footer .subscribe {
+  margin-top: -10px;
+  width: 100%;
+  margin-left: -5%;
+  /* margin-left: 0;
+  font-size: 17px; */
+}
+
+footer .inner-footer .subscribe .gnb {
+  margin-left: -50px;
+  margin-top: -10px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+footer .inner-footer .subscribe .gnb i {
+  padding-left: 40px;
+}
+
+footer .inner-footer .option nav {
+  padding-right: 30px;
+  margin-top: -15px;
+}
+}
+
+/* 태블릿 1024px 이하 해상도 (아이패드 프로) */
+@media (max-width: 1024px) {
+  
+  footer .inner-footer .option nav {
+    padding-right: 20px;
+    margin-top: -15px;
+  }
+
+  footer .inner-footer .subscribe .gnb{
+    margin-left: -120px;
+    margin-top: -10px;
+  }
+
+  footer .inner-footer .subscribe .messenger {
+    /* padding-right: 10px; */
+    
+    margin-right: -120px;
+    margin-top: -10px;
+  }
+
+  footer .inner-footer .subscribe .messenger a {
+    font-size: 20px;
+    margin-right: -10px;
+  }
+
+  footer .inner-footer nav.gnb-bottom {
+    margin-left: -50px;
+    margin-right: -50px;
+    
+  }
+
+  footer .inner-footer nav.gnb-bottom ul li{
+    padding-right: 5px;
+    font-size: 14px;
+   
+  }
+
+  footer .inner-footer .option p {
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  footer .inner-footer .subscribe {
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+  }
+
+}
+
+
+/* 태블릿 768px 이하 해상도 (아이패드 미니) */
+@media (max-width: 768px) {
+  footer .inner-footer {
+    width: 100%;
+  }
+  footer .inner-footer .subscribe .gnb {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+  }
+
+  footer .inner-footer .subscribe .messenger {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    
+  }
+
+  footer .inner-footer .subscribe .messenger a {
+    margin-right: -80px;
+    margin-left: 90px;
+  }
+
+  footer .inner-footer .option {
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    margin-left: -20px;
+
+  }
+
+  footer .inner-footer .option nav {
+    margin-bottom: 40px;
+  }
+
+/* 밑에 해결 불가능..------------------------------------ */
+  footer .inner-footer nav.gnb-bottom {
+    
+    display: flex;
+    justify-content: center;
+    /* height: 300px; */
+    border: 1px solid red;
+    
+    
+  }
+
+  footer .inner-footer nav.gnb-bottom li {
+    justify-content: center;
+    display: block;
+    
+  }
+  
+  
+
+
+
 }
